@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import Head from 'next/head';
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
  
 const inter = Inter({
   subsets: ['latin'],
@@ -20,6 +21,8 @@ export default function MyApp({ Component, pageProps }) {
     <main className={`${inter.variable} font-sans bg-light w-full min-h-screen`}>
       < NavBar />
       <Component {...pageProps} />
+      < Footer/ >
+
     </main>
     </>
   )
