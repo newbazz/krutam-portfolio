@@ -5,7 +5,10 @@ import {useInView, useMotionValue, useSpring, } from 'framer-motion'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
+import Skills from '@/components/Skills'
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 
 const AnimatedNumbers = ({value}) =>{
   const ref = useRef(null);
@@ -30,9 +33,6 @@ const AnimatedNumbers = ({value}) =>{
   
   }, [springValue, value])
   
-
-
-
     return <span ref = {ref}></span>
 }
 
@@ -101,6 +101,9 @@ const about = () => {
     </div>
 </div>
             </div>
+            <Skills />
+            <Experience />
+            <Education />
            </Layout>
         </main>
     
