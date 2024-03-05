@@ -23,13 +23,13 @@ export default function Home() {
                 <Image src={profilePic} priority alt="Krutam" className='w-full h-auto'/>
               </div>
               <div className='w-1/2 flex flex-col items-center self-center'>
-                <AnimatedText text="Lorem ipsum dolor, sit amet consectetur. " className='!text-6xl !text-left' />
+                <AnimatedText text="creating deep impact across      the world. " className='!text-6xl !text-left' />
                 <p className='my-4 text-base font-medium'>
                   Accusantium, in consectetur ad qui eius nam tempore, ipsam reprehenderit necessitatibus 
                   deleniti commodi odio cupiditate recusandae nesciunt iusto fuga saepe. Obcaecati, laboriosam?
                 </p>
                 <div className='flex items-center self-start mt-2'>
-                  <Link href="/dummy.pdf" target={"_blank"}
+                  <Link href="/Resume.pdf" target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                   border-2 dorder-solid border-transparent hover:border-dark
@@ -39,7 +39,7 @@ export default function Home() {
                   
                   </Link>
 
-                  <Link href="malto:abcd@gmail.com" target={"_blank"}
+                  <Link href="malto:krutamhathi14@gmail.com"
                   className="ml-4 text-lg font-medium capitalize text-dark underline"
                   >Contact</Link>
                 </div>
