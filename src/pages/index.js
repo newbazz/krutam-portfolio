@@ -23,10 +23,11 @@ export default function Home() {
                 <Image src={profilePic} priority alt="Krutam" className='w-full h-auto'/>
               </div>
               <div className='w-1/2 flex flex-col items-center self-center'>
-                <AnimatedText text="creating deep impact across      the world. " className='!text-6xl !text-left' />
+                <AnimatedText text="creating deep impact across the world. " className='!text-6xl !text-left' />
                 <p className='my-4 text-base font-medium'>
-                  Accusantium, in consectetur ad qui eius nam tempore, ipsam reprehenderit necessitatibus 
-                  deleniti commodi odio cupiditate recusandae nesciunt iusto fuga saepe. Obcaecati, laboriosam?
+                Software Engineer by Profession and a Finance Enthusiast. 
+                I am curious to learn and collaborate with other people.
+                I am a firm believer of <b>You Only Regret Things You Don't Do</b>.
                 </p>
                 <div className='flex items-center self-start mt-2'>
                   <Link href="/Resume.pdf" target={"_blank"}
