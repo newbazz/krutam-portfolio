@@ -14,7 +14,6 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
   return(
     <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
 
-      \\Border element
       <div className='absolute top-0 -right-3 -z-10 w-[101%]       
        h-[103%] rounded-[2rem] bg-dark rounded-br-3xl ' />
          
