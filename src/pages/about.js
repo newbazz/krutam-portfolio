@@ -49,27 +49,38 @@ const about = () => {
            <AnimatedText text="Lorem Ipsum Dolor !" className='mb-16'/>
 
             <div className='grid w-full grid-cols-8 gap-16' >
-                <div className='col-span-3 flex flex-col items-start jistify-start'>
+                <div className='col-span-3 flex flex-col items-start justify-start'>
                    <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>About Me</h2>
                    
-                   <p className='font-medium' >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.Aperiam, earum? Ad harum repellat,
-                    voluptate qui obcaecati tenetur. Quia aliquid magni tempora possimus?
-                    Neque corporis iure odit quam dolore consequuntur suscipit.
+                   <p className='font-medium text-justify' >
+                   I work as a Software Engineer at Microsoft, where I've gained nearly three years of experience.
                     </p> 
 
-                    <p className='my-4 font-medium' >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.Aperiam, earum? Ad harum repellat,
-                    voluptate qui obcaecati tenetur. Quia aliquid magni tempora possimus?
-                    Neque corporis iure odit quam dolore consequuntur suscipit.
+                    <p className='my-4 font-medium text-justify' >
+                    I'm fascinated by the inner workings of software and driven by my passion to understand how large-scale systems are constructed.
                     </p> 
 
-                    <p className='font-medium' >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.Aperiam, earum? Ad harum repellat,
-                    voluptate qui obcaecati tenetur. Quia aliquid magni tempora possimus?
-                    Neque corporis iure odit quam dolore consequuntur suscipit.
+                    <p className='font-medium text-justify' >
+                    Additionally, I'm enthusiastic about machine learning and eager to collaborate with others in any way I can.
                     </p> 
+
+                    <p className='my-4 font-medium text-justify' >
+                    In my free time, I enjoy playing and reading, which form the foundation of my learning and values. 
+                    </p> 
+
+                    <p className='font-medium text-justify' >
+                    I strive to learn from anyone and anywhere to lead a fulfilling life.
+                    </p> 
+
+                    <p className='my-4 font-medium text-justify' >
+                    I'm also deeply captivated by the teachings of the holy book Bhagwat Geeta.
+                    </p> 
+
+                   
+
                 </div>
+
+                
 <div className='col-span-3 relative h-max rounded-2xl border-2
  border-solid border-dark bg-light p-8
  '>

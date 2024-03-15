@@ -47,31 +47,29 @@ const Education = () => {
             className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'  />
            
            <ul className='w-full flex flex-col items-start justify-between ml-4'>
-              <Details
+              <Details 
+              type="Bachelor of Tevhnology + MS"
+              time="International Institute of Information Technology, Hyderabad"
+              place="www.google.com"
+              info="2016-2021"
+              />
+               {/* <Details
               
               type="Software Engineer"
               time="Google"
               place="www.google.com"
               info="2022-Present"
               
-              />
-               <Details
-              
-              type="Software Engineer"
-              time="Google"
-              place="www.google.com"
-              info="2022-Present"
-              
-              />
+              /> */}
 
-                <Details
+                {/* <Details
               
               type="Software Engineer"
               time="Google"
               place="www.google.com"
               info="2022-Present"
               
-              />
+              /> */}
             </ul>
         </div>
 
