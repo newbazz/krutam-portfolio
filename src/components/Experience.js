@@ -52,6 +52,15 @@ const Experience = () => {
            <ul className='w-full flex flex-col items-start justify-between ml-4'>
               <Details
               
+              position="Software Engineer" company="Microsoft"
+              companyLink="https://www.microsoft.com/en-in"
+              time="2022-Present" address="Hyderabad"
+              work="Designed and built scalable backend for the apps on Microsoft Teams.
+               I recently shifted to a new team called Bing Travel which has a consumed Daily User Count of 3.2 Mil. "
+              
+              />
+              {/* <Details
+              
               position="Software Engineer" company="Google"
               companyLink="www.google.com"
               time="2022-Present" address="Hyderabad"
@@ -59,19 +68,9 @@ const Experience = () => {
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Nunc eget lorem dolor sed viverra. "
               
-              />
-              <Details
-              
-              position="Software Engineer" company="Google"
-              companyLink="www.google.com"
-              time="2022-Present" address="Hyderabad"
-              work=" Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Nunc eget lorem dolor sed viverra. "
-              
-              />
+              /> */}
 
-<Details
+            {/* <Details
               
               position="Software Engineer" company="Google"
               companyLink="www.google.com"
@@ -80,9 +79,9 @@ const Experience = () => {
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Nunc eget lorem dolor sed viverra. "
               
-              />
-
-<Details
+              /> */}
+{/* 
+            <Details
               
               position="Software Engineer" company="Google"
               companyLink="www.google.com"
@@ -90,8 +89,7 @@ const Experience = () => {
               work=" Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Nunc eget lorem dolor sed viverra. "
-              
-              />
+              /> */}
             </ul>
         </div>
 
