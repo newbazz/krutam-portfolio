@@ -18,7 +18,7 @@ export default function MyApp({ Component, pageProps }) {
       <link rel = "icon" href = "/favicon.png"/>
     </Head>
 
-    <main className={`${inter.variable} font-sans bg-light w-full min-h-screen`}>
+    <main className={`${inter.variable} font-sans bg-light dark:bg-dark w-full min-h-screen`}>
       < NavBar />
       <Component {...pageProps} />
       < Footer/ >

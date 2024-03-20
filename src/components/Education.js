@@ -48,9 +48,9 @@ const Education = () => {
            
            <ul className='w-full flex flex-col items-start justify-between ml-4'>
               <Details 
-              type="Bachelor of Tevhnology + MS"
-              time="International Institute of Information Technology, Hyderabad"
-              place="www.google.com"
+              type="Bachelor of Technology + MS"
+              time="International Institute of Information Technology"
+              place="Hyderabad"
               info="2016-2021"
               />
                {/* <Details
