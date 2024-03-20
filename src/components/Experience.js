@@ -56,7 +56,7 @@ const Experience = () => {
               companyLink="https://www.microsoft.com/en-in"
               time="2022-Present" address="Hyderabad"
               work="Designed and built scalable backend for the apps on Microsoft Teams.
-               I recently shifted to a new team called Bing Travel which has a consumed Daily User Count of 3.2 Mil. "
+              I recently shifted to a new team called Bing Travel which has a consumed Daily User Count of 3.2 Million. "
               
               />
               {/* <Details

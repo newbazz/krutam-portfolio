@@ -1,40 +1,40 @@
 'use client'
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
-import {useInView, useMotionValue, useSpring, } from 'framer-motion'
+// import {useInView, useMotionValue, useSpring, } from 'framer-motion'
 import Head from 'next/head'
 import Image from 'next/image'
-import React, { useEffect, useRef } from 'react'
+// import React, { useEffect, useRef } from 'react'
 import Skills from '@/components/Skills'
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 
-const AnimatedNumbers = ({value}) =>{
-  const ref = useRef(null);
+// const AnimatedNumbers = ({value}) =>{
+//   const ref = useRef(null);
 
-  const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, {duration:3000})
-  const isInView = useInView(ref, {once:true});
+//   const motionValue = useMotionValue(0);
+//   const springValue = useSpring(motionValue, {duration:3000})
+//   const isInView = useInView(ref, {once:true});
 
-  useEffect(() => {
-    if(isInView){
-      motionValue.set(value);
-    }
+//   useEffect(() => {
+//     if(isInView){
+//       motionValue.set(value);
+//     }
 
-  },[isInView, value, motionValue])
+//   },[isInView, value, motionValue])
 
-  useEffect(() => {
-      springValue.on("change", (latest)=> {
-            if(ref.current && latest.toFixed(0) <= value ){
-              ref.current.textContent = latest.toFixed(0);
-            }
-      })
+//   useEffect(() => {
+//       springValue.on("change", (latest)=> {
+//             if(ref.current && latest.toFixed(0) <= value ){
+//               ref.current.textContent = latest.toFixed(0);
+//             }
+//       })
   
-  }, [springValue, value])
+//   }, [springValue, value])
   
-    return <span ref = {ref}></span>
-}
+//     return <span ref = {ref}></span>
+// }
 
 const about = () => {
   return (
@@ -44,11 +44,11 @@ const about = () => {
             <meta name = "description" content="any description" />
         </Head>
 
-        <main className='flex w-full flex-col items-center justify-center'>
+        <main className='flex w-full flex-col items-center justify-center dark:text-light'>
            <Layout className='pt-16'>
-           <AnimatedText text="Lorem Ipsum Dolor !" className='mb-16'/>
+           <AnimatedText text="Design, Craft, Create!" className='mb-16'/>
 
-            <div className='grid w-full grid-cols-8 gap-16' >
+            <div className='grid w-full grid-cols-6 gap-16' >
                 <div className='col-span-3 flex flex-col items-start justify-start'>
                    <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>About Me</h2>
                    
@@ -74,14 +74,11 @@ const about = () => {
 
                     <p className='my-4 font-medium text-justify' >
                     I'm also deeply captivated by the teachings of the holy book Bhagwat Geeta.
-                    </p> 
-
-                   
-
+                    </p>
                 </div>
 
                 
-<div className='col-span-3 relative h-max rounded-2xl border-2
+<div className='col-span-3 relative h-max rounded-2xl border-2 w-3/4
  border-solid border-dark bg-light p-8
  '>
 
@@ -89,7 +86,7 @@ const about = () => {
     <Image src={profilePic} alt="Krutam Hathi" className="w-full h-auto rounded-2xl"/>
 </div>
 
-<div className='col-span-2 flex flex-col items-end justify-between'>
+{/* <div className='col-span-2 flex flex-col items-end justify-between'>
     <div className='flex flex-col items-end justify-center'>
       <span className='inline-block text-7xl font-bold'>
       <AnimatedNumbers value={50}/>+
@@ -110,7 +107,7 @@ const about = () => {
       </span>
       <h2 className='text-xl font-medium capitalize text-dark/75'>years of experience</h2>
     </div>
-</div>
+</div> */}
             </div>
             <Skills />
             <Experience />
