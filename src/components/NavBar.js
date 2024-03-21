@@ -107,14 +107,14 @@ const NavBar = () => {
             <motion.a href="https://substack.com/@newbazz" target = {"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 ml-3'
+                className='w-6 mx-3'
             >
                 <SubstackIcon/>
             </motion.a>
 
             <button
             onClick={() => setMode(mode === "light" ? "dark": "light") }
-            className={`flex items-center justify-center rounded-full p-1
+            className={`flex items-center justify-center rounded-full p-1 ml-3
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }
             `}
             
@@ -174,14 +174,14 @@ className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed to
             <motion.a href="https://substack.com/@newbazz" target = {"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 ml-3 sm:mx-1'
+                className='w-6 mx-3 sm:mx-1'
             >
                 <SubstackIcon/>
             </motion.a>
 
             <button
             onClick={() => setMode(mode === "light" ? "dark": "light") }
-            className={`flex items-center justify-center rounded-full p-1
+            className={`flex items-center justify-center rounded-full p-1 ml-3 sm:ml-1
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }
             `}
             
@@ -189,7 +189,7 @@ className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed to
                 {
                     mode === "dark" ?
                     <SunIcon className={"fill-dark"} />
-                    : <MoonIcon className={"fill-dark"} />
+                    :<MoonIcon className={"fill-dark"} />
                 }
 
             </button>
