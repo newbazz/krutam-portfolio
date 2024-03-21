@@ -20,7 +20,7 @@ const Footer = () => {
 
             <Link href="https://www.linkedin.com/in/suraj-pradhan/" target={"_blank"} className='underline
             underline-offset-2
-            '> Say Hello </Link>
+            '> Contact Developer </Link>
         </Layout>
     </footer>
   )
