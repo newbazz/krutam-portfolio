@@ -5,9 +5,10 @@ import { CircularText,} from './Icons'
 const HireMe = () => {
   return (
     <div className='fixed left-4 bottom-4
-    flex item-center justify-center overflow-hidden
+    flex item-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto
+    md:absolute
     '>
-     <div className='w-48 h-auto flex items-center justify-center relative'>
+     <div className='w-48 h-auto flex items-center justify-center relative md:w-24'>
       <CircularText className={"fill-dark dark:fill-light animate-spin-slow "} />
 
       <Link href="mailto:krutamhathi14@gmail.com" className='flex items-center justify-center
@@ -17,6 +18,8 @@ const HireMe = () => {
 
       dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
       hover:dark:border-light
+
+      md:w-12 md:h-12 md:text-[25px]
       
       '>🤝</Link>
      </div>
