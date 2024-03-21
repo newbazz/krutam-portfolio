@@ -54,7 +54,7 @@ export default function Home() {
                   
                   </Link>
 
-                  <Link href="malto:krutamhathi14@gmail.com" target={"_blank"}
+                  <Link href="mailto:krutamhathi14@gmail.com" target={"_blank"}
                   className="ml-4 text-lg font-medium capitalize text-dark underline  dark:text-light md:text-base"
                   >Contact</Link>
                 </div>
