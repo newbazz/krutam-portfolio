@@ -6,6 +6,7 @@ import  { SubstackIcon, LinkedInIcon, GithubIcon, TopmateIcon, SunIcon, MoonIcon
 import {motion} from "framer-motion"
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
+// Custom link for navigation bar
 const CustomLink = ({href, title, className=" "}) => {
     
     const router = useRouter();
@@ -48,6 +49,7 @@ const CustomMobileLink = ({href, title, className=" ", toggle}) => {
     )
 }
 
+
 const NavBar = () => {
 
     const [mode, setMode] = useThemeSwitcher();
@@ -69,6 +71,7 @@ const NavBar = () => {
             <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${isOpen ? '-rotate-45 -translate-y-1': 'translate-y-0.5'}`}></span>
         </button>
 
+    {/* Navigation Bar for other screen sizes */}
     <div className="w-full flex justify-between items-center lg:hidden">
     <nav>
             <CustomLink href="/" title="Home" className='mr-4' />
@@ -81,7 +84,7 @@ const NavBar = () => {
             <motion.a href="https://github.com/newbazz" target = {"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 mr-4'
+                className='w-6 mr-3'
             >
                 <GithubIcon />
             </motion.a>
@@ -89,7 +92,7 @@ const NavBar = () => {
             <motion.a href="https://topmate.io/krutam_hathi" target = {"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 mr-4'
+                className='w-6 mx-3'
             >
                 <TopmateIcon/>
             </motion.a>
@@ -97,24 +100,23 @@ const NavBar = () => {
             <motion.a href="https://www.linkedin.com/in/krutamhathi/" target = {"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 mr-4'
+                className='w-6 mx-3'
             >
                 <LinkedInIcon />
             </motion.a>
             <motion.a href="https://substack.com/@newbazz" target = {"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 mr-4'
+                className='w-6 mx-3'
             >
                 <SubstackIcon/>
             </motion.a>
 
             <button
             onClick={() => setMode(mode === "light" ? "dark": "light") }
-            className={`flex items-center justify-center rounded-full p-1
+            className={`flex items-center justify-center rounded-full p-1 ml-3
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }
             `}
-            
             >
                 {
                     mode === "dark" ?
@@ -126,8 +128,8 @@ const NavBar = () => {
         </nav>
     </div>
 
-    {/* Mobile Navigation Bar */}
 
+    {/* Mobile Navigation Bar */}
 {
     isOpen ?
 <motion.div
@@ -148,7 +150,7 @@ className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed to
             <motion.a href="https://github.com/newbazz" target = {"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
+                className='w-6 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1'
             >
                 <GithubIcon />
             </motion.a>
@@ -178,7 +180,7 @@ className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed to
 
             <button
             onClick={() => setMode(mode === "light" ? "dark": "light") }
-            className={`flex items-center justify-center rounded-full p-1
+            className={`flex items-center justify-center rounded-full p-1 ml-3 sm:ml-1
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }
             `}
             
@@ -186,7 +188,7 @@ className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed to
                 {
                     mode === "dark" ?
                     <SunIcon className={"fill-dark"} />
-                    : <MoonIcon className={"fill-dark"} />
+                    :<MoonIcon className={"fill-dark"} />
                 }
 
             </button>
@@ -195,9 +197,9 @@ className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed to
     :null
 }
 
-        <nav className='absolute left-[50%] top-2 translate-x-[-50%]'><Logo /></nav>
+    <nav className='absolute left-[50%] top-2 translate-x-[-50%]'><Logo /></nav>
     </header>
-  )
+  ) 
 }
 
 export default NavBar

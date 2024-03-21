@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { CircularText,} from './Icons'
 
-const HireMe = () => {
+const ContactMe = () => {
   return (
     <div className='fixed left-4 bottom-4
     flex item-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto
@@ -27,4 +27,4 @@ const HireMe = () => {
   )
 }
 
-export default HireMe
+export default ContactMe
