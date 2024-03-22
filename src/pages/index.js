@@ -63,7 +63,7 @@ export default function Home() {
         </Layout>
 
         <ContactMe />
-        <div className='absolute right-8 bottom-8 w-24 md:hidden'>
+        <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
           <Image src={lightBulb} alt="Krutam Hathi" className='w-full h-auto'/>
         </div>
       </main>
