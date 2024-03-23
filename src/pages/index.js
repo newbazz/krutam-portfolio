@@ -13,13 +13,13 @@ export default function Home() {
     <>
       <Head>
         <title>Krutam's Portfolio</title>
-        <meta name="description" content = "Personal Website of Krutam Hathi" />
+        <meta name="description" content="Personal Website of Krutam Hathi" />
       </Head>
 
-      <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
+      <main className='flex items-center text-dark w-full min-h-screen dark:text-light '>
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className="flex items-center justify-between w-full lg:flex-col">
-              <div className='w-1/2 md:w-full'>
+              <div className='w-1/2 md:w-full '>
 
                 {/* Profile Picture */}
                 <Image src={profilePic} alt="Krutam" className='w-full h-auto lg:hidden md:inline-block md:w-full'
@@ -30,7 +30,7 @@ export default function Home() {
                 />
               </div>
               <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
-                <AnimatedText text="Creating Deep Impact Across the World. " className='!text-6xl !text-left
+                <AnimatedText text="Creating Deep Impact Across the World." className='!text-6xl !text-left
                 xl:!text-5xl lg:!text-center lg:!text-6xl md:text-5xl sm:!text-3xl
                 '/>
                 <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
