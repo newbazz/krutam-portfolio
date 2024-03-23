@@ -50,7 +50,7 @@ const about = () => {
 
               <div className='grid w-full grid-cols-7 gap-16 sm:gap-8' >
                 <div className='col-span-4 flex flex-col items-start justify-start'>
-                   <h2 className='pt-20 mb-4 text-lg font-bold uppercase text-dark/80'>About Me</h2>
+                   <h2 className='pt-10 mb-4 text-lg font-bold uppercase text-dark/80 dark:text-light/80'>About Me</h2>
                    
                    <p className='font-medium ' >
                    I work as a Software Engineer at Microsoft, where I've gained nearly three years of experience.
@@ -77,13 +77,17 @@ const about = () => {
                     </p>
                 </div>
 
-                
+                    {/* Image Frame */}
                   <div className='col-span-3 relative h-auto rounded-2xl border-2
-                    border-solid border-dark bg-light p-8 
+                    border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light
                     '>
                         {/* div for border outline */}
-                  <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[102.6%] rounded-[2.5rem] bg-dark rounded-br-3xl'/>
-                      <Image src={profilePic} priority alt="Krutam Hathi"  className="`w-[80%]` h-auto rounded-2xl"/>
+                  <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[102.6%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light'/>
+                      <Image src={profilePic} alt="Krutam Hathi"  className="`w-[80%]` h-auto rounded-2xl"
+                       priority
+                       sizes="(max-width:768px) 100vw,
+                       (max-width:1200px) 50vw,
+                       40vw"/>
                     </div>
 
 

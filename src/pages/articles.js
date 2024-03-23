@@ -54,18 +54,18 @@ const Article = ({img, title, date, link}) => {
               viewport={{once:true}}
               className='relative w-full p-4 my-6 rounded-xl flex items-center
               justify-between bg-light text-dark first:mt-0 border border-solid border-dark
-              border-r-4 border-b-4
+              border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light
               
               '>
                   <MovingImg title={title} img={img} link={link} />
-                  <span className="text-primary font-semibold pl-4">{date}</span>
+                  <span className="text-primary font-semibold pl-4 dark:text-primaryDark">{date}</span>
               </motion.li>
         )
 }
 
 const FeaturedArticle = ({img, title, time, summary, link}) => {
   return(
-    <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
+    <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light'>
 
       <div className='absolute top-0 -right-3 -z-10 w-[101%]       
        h-[103%] rounded-[2rem] bg-dark rounded-br-3xl ' />
@@ -73,9 +73,14 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
          <Link href={link} target="_blank"
                 className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'
                 >
-                    <FramerImage src={img} alt={title} priority className='w-full h-auto' 
+                    <FramerImage src={img} alt={title} className='w-full h-auto' 
                       whileHover={{scale:1.05}}
                       transition={{duration:0.2}}
+                      priority
+                      as="image"
+                      sizes="(max-width:768px) 100vw,
+                      (max-width:1200px) 50vw,
+                      50vw"
                     
                     />
                 </Link>
@@ -83,7 +88,7 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
                       <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline'>{title}</h2>
                 </Link>
                 <p className='text-sm mb-2'>{summary}</p>
-                <span className='text-primary font-semibold'>{time}</span>
+                <span className='text-primary font-semibold dark:text-primaryDark'>{time}</span>
     </li>
   )
 }
@@ -95,7 +100,7 @@ const articles = () => {
             <title>Krutam Hathi | Articles Page</title>
             <meta name="description" content="any description" />
     </Head>
-    <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
+    <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
       <Layout className='pt-16' >
 
           <AnimatedText text="You Only Regret Things You Don't Do." className='mb-16' />
