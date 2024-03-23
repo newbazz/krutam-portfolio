@@ -60,13 +60,14 @@ const NavBar = () => {
         setIsOpen(!isOpen)
     }
 
-
   return (
     <header
      className='w-full px-32 py-8 font-medium flex items-center justify-between
      dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8
      '>
-        <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
+
+        {/* Hamburger Menu */}
+        <button className="pt-3 flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
             <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1': '-translate-y-0.5'}`}></span>
             <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0': 'opacity-100'}`}></span>
             <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${isOpen ? '-rotate-45 -translate-y-1': 'translate-y-0.5'}`}></span>
@@ -129,7 +130,6 @@ const NavBar = () => {
         </nav>
     </div>
 
-
     {/* Mobile Navigation Bar */}
 {
     isOpen ?
@@ -140,14 +140,14 @@ animate={{scale:1, opacity:1}}
 className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
     bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
     ">
-        <nav className='flex items-center flex-col justify-center mt-2'>
+        <nav className='flex items-center flex-col justify-center'>
             <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
             <CustomMobileLink href ="/about" title="About" className='' toggle={handleClick} />
             <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
             <CustomMobileLink href="/articles" title="Articles" className='' toggle={handleClick} />
         </nav>
 
-        <nav className="flex items-center justify-center flex-wrap" >
+        <nav className="flex items-center justify-center flex-wrap mt-3" >
             <motion.a href="https://github.com/newbazz" target = {"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}

@@ -19,7 +19,7 @@ const ContactMe = () => {
       dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
       hover:dark:border-light
 
-      md:w-12 md:h-12 md:text-[25px]
+      md:w-12 md:h-12 md:text-[30px]
       
       '>🤝</Link>
      </div>
