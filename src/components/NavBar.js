@@ -22,6 +22,7 @@ const CustomLink = ({href, title, className=" "}) => {
             ${router.asPath === href ? 'w-full': 'w-0'}
             dark:bg-light`}
             >&nbsp;</span>
+            
         </Link>
     )
 }
@@ -114,7 +115,7 @@ const NavBar = () => {
 
             <button
             onClick={() => setMode(mode === "light" ? "dark": "light") }
-            className={`flex items-center justify-center rounded-full p-1 ml-3
+            className={`w-6 h-6 flex items-center justify-center rounded-full p-1 ml-3
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark" }
             `}
             >
@@ -178,6 +179,7 @@ className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed to
                 <SubstackIcon/>
             </motion.a>
 
+            {/* /Button to toggle dark and light mode */}
             <button
             onClick={() => setMode(mode === "light" ? "dark": "light") }
             className={`flex items-center justify-center rounded-full p-1 ml-3 sm:ml-1

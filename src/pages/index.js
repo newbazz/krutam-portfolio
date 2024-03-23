@@ -23,13 +23,11 @@ export default function Home() {
 
                 {/* Profile Picture */}
                 <Image src={profilePic} alt="Krutam" className='w-full h-auto lg:hidden md:inline-block md:w-full'
-                priority
+                 priority
                 sizes="(max-width:768px) 100vw,
                 (max-width:1200px) 50vw,
                 50vw"
                 />
-
-
               </div>
               <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
                 <AnimatedText text="Creating Deep Impact Across the World. " className='!text-6xl !text-left
@@ -63,7 +61,7 @@ export default function Home() {
         </Layout>
 
         <ContactMe />
-        <div className='absolute right-8 bottom-8 w-24 md:hidden'>
+        <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
           <Image src={lightBulb} alt="Krutam Hathi" className='w-full h-auto'/>
         </div>
       </main>

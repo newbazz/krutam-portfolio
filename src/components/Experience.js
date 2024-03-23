@@ -6,20 +6,19 @@ const Details = ({position, company, companyLink, time, address, work}) => {
         const ref = useRef(null); 
     return (
     
-    <li ref= {ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
        
-        <LiIcon reference = {ref}/>
+        <LiIcon reference={ref}/>
         
         <motion.div
         initial={{y:50}}
         whileInView={{y:0}}
         transition={{duration:0.5, type:"spring"}}
         >
-            <h3 className='capitalize font-bold text-2xl'>{position}&nbsp; <a href={companyLink}
-            target="_blank"
-            className='text-primary capitalize'
+            <h3 className='capitalize font-bold text-2xl'>{position} &nbsp;
+             <a href={companyLink} target="_blank" className='text-primary capitalize dark:text-primaryDark'
             >@{company}</a> </h3>
-            <span className='capitalize font-medium text-dark/75'>
+            <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                 {time} | {address}
             </span>
             <p className='font-medium w-full'>
@@ -30,69 +29,35 @@ const Details = ({position, company, companyLink, time, address, work}) => {
 }
 
 const Experience = () => {
+
     const ref = useRef(null);
         const {scrollYProgress} = useScroll(
             {
                 target: ref,
-                offset: ["start end ", "center start"]
+                offset: ["start end", "center start"]
             }
         )
-
   return (
     <div className='my-64'>
         <h2 className='font-bold text-8xl mb-32 w-full text-center'>
             Experience
         </h2>
 
-        <div ref = {ref} className='w-[75%] mx-auto relative'>
+        <div ref={ref} className='w-[75%] mx-auto relative'>
             <motion.div
-            style={{scaleY:scrollYProgress}}
-            className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'  />
+            style={{scaleY: scrollYProgress}}
+            className='absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light' />
            
            <ul className='w-full flex flex-col items-start justify-between ml-4'>
               <Details
-              
               position="Software Engineer" company="Microsoft"
               companyLink="https://www.microsoft.com/en-in"
               time="2022-Present" address="Hyderabad"
               work="Designed and built scalable backend for the apps on Microsoft Teams.
-              I recently shifted to a new team called Bing Travel which has a consumed Daily User Count of 3.2 Million. "
-              
+              I recently shifted to a new team called Bing Travel which has a consumed Daily User Count of 3.2 Million."
               />
-              {/* <Details
-              
-              position="Software Engineer" company="Google"
-              companyLink="www.google.com"
-              time="2022-Present" address="Hyderabad"
-              work=" Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Nunc eget lorem dolor sed viverra. "
-              
-              /> */}
-
-            {/* <Details
-              
-              position="Software Engineer" company="Google"
-              companyLink="www.google.com"
-              time="2022-Present" address="Hyderabad"
-              work=" Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Nunc eget lorem dolor sed viverra. "
-              
-              /> */}
-{/* 
-            <Details
-              
-              position="Software Engineer" company="Google"
-              companyLink="www.google.com"
-              time="2022-Present" address="Hyderabad"
-              work=" Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Nunc eget lorem dolor sed viverra. "
-              /> */}
             </ul>
         </div>
-
     </div>
   )
 }
