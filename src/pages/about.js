@@ -45,15 +45,15 @@ const about = () => {
       </Head>
 
       <main className=" flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16">
+        <Layout className="pt-12">
           <AnimatedText
             text="Design Craft Create!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 ">
-            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-3 md:col-span-8 md:order-2">
-              <h2 className="pt-10 mb-4 text-2xl font-bold uppercase text-dark/80 dark:text-light/80">
+          <div className="relative grid w-full grid-cols-10 items-center justify-between gap-16 sm:gap-8 ">
+            <div className="col-span-6 flex flex-col items-start justify-start xl:col-span-6 md:col-span-10 md:order-2">
+              <h2 className="mb-4 text-2xl font-bold uppercase text-dark/80 dark:text-light/80">
                 About Me
               </h2>
 
@@ -91,9 +91,10 @@ const about = () => {
 
             {/* Image Frame */}
             <div
-              className="col-span-3 relative h-auto rounded-2xl border-2
+              className="col-span-4 relative h-max rounded-2xl border-2
                     border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light
-                    md:order-1 md:col-span-8
+                    xl:col-span-4
+                    md:order-1 md:col-span-10
                     "
             >
               {/* div for border outline */}
@@ -108,29 +109,6 @@ const about = () => {
                        50vw"
               />
             </div>
-
-            {/* <div className='col-span-2 flex flex-col items-end justify-between'>
-    <div className='flex flex-col items-end justify-center'>
-      <span className='inline-block text-7xl font-bold'>
-      <AnimatedNumbers value={50}/>+
-      </span>
-      <h2 className='text-xl font-medium capitalize text-dark/75'>Satisfied Clients</h2>
-    </div>
-
-    <div className='flex flex-col items-end justify-center'>
-      <span className='inline-block text-7xl font-bold'>
-      <AnimatedNumbers value={40}/>+
-      </span>
-      <h2 className='text-xl font-medium capitalize text-dark/75'>projects completed</h2>
-    </div>
-
-    <div className='flex flex-col items-end justify-center'>
-      <span className='inline-block text-7xl font-bold'>
-      <AnimatedNumbers value={5}/>+
-      </span>
-      <h2 className='text-xl font-medium capitalize text-dark/75'>years of experience</h2>
-    </div>
-</div>  */}
           </div>
           <Skills />
           <Experience />
