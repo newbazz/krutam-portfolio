@@ -79,6 +79,7 @@ const NavBar = () => {
     >
       {/* Hamburger Menu */}
       <button
+        aria-label="Hamburger Menu"
         className="pt-3 flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
       >
