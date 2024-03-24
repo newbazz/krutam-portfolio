@@ -74,7 +74,7 @@ const NavBar = () => {
   return (
     <header
       className="w-full px-32 py-8 font-medium flex items-center justify-between
-     dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8
+     dark:text-light relative lg:px-16 md:px-12 sm:px-8
      "
     >
       {/* Hamburger Menu */}
@@ -155,7 +155,7 @@ const NavBar = () => {
           <button
             aria-label="themeSwitcher"
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`w-6 h-6 flex items-center justify-center rounded-full p-1 ml-3
+            className={`size-7 flex items-center justify-center rounded-full p-1 ml-3
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
             `}
           >
