@@ -240,7 +240,7 @@ const NavBar = () => {
             {/* /Button to toggle dark and light mode */}
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`flex items-center justify-center rounded-full p-1 ml-3 sm:ml-1
+              className={`size-7 flex items-center justify-center rounded-full p-1 ml-3 sm:ml-1
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
             `}
             >
