@@ -21,12 +21,17 @@ const Footer = () => {
           <Link
             href="https://www.linkedin.com/in/suraj-pradhan/"
             target={"_blank"}
+            className="underline underline-offset-2"
           >
             Suraj Pradhan
           </Link>
         </div>
 
-        <Link href="mailto:pradhansuraj423@gmail.com" target={"_blank"}>
+        <Link
+          href="mailto:pradhansuraj423@gmail.com"
+          target={"_blank"}
+          className="underline underline-offset-2"
+        >
           Contact Developer
         </Link>
       </Layout>
