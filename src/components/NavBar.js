@@ -110,6 +110,7 @@ const NavBar = () => {
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
             href="https://github.com/newbazz"
+            aria-label="Link to Github"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -120,6 +121,7 @@ const NavBar = () => {
 
           <motion.a
             href="https://topmate.io/krutam_hathi"
+            aria-label="Link to Topmate"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -131,6 +133,7 @@ const NavBar = () => {
           <motion.a
             href="https://www.linkedin.com/in/krutamhathi/"
             target={"_blank"}
+            aria-label="Link to LinkedIn"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mx-3"
@@ -140,6 +143,7 @@ const NavBar = () => {
           <motion.a
             href="https://substack.com/@newbazz"
             target={"_blank"}
+            aria-label="Link to Substack"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mx-3"
@@ -148,6 +152,7 @@ const NavBar = () => {
           </motion.a>
 
           <button
+            aria-label="themeSwitcher"
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`w-6 h-6 flex items-center justify-center rounded-full p-1 ml-3
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
@@ -200,6 +205,7 @@ const NavBar = () => {
           <nav className="flex items-center justify-center flex-wrap mt-3">
             <motion.a
               href="https://github.com/newbazz"
+              aria-label="Link to Github"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -210,6 +216,7 @@ const NavBar = () => {
 
             <motion.a
               href="https://topmate.io/krutam_hathi"
+              aria-label="Link to Topmate"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -220,6 +227,7 @@ const NavBar = () => {
 
             <motion.a
               href="https://www.linkedin.com/in/krutamhathi/"
+              aria-label="Link to LinkedIn"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -229,6 +237,7 @@ const NavBar = () => {
             </motion.a>
             <motion.a
               href="https://substack.com/@newbazz"
+              aria-label="Link to Substack"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -239,6 +248,7 @@ const NavBar = () => {
 
             {/* /Button to toggle dark and light mode */}
             <button
+              aria-label="themeSwitcher"
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={`size-7 flex items-center justify-center rounded-full p-1 ml-3 sm:ml-1
             ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
