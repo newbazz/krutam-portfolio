@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Personal Website of Krutam Hathi" />
       </Head>
 
-      <main className="flex items-center text-dark w-full min-h-[600px] dark:text-light ">
+      <main className="flex items-center text-dark w-full min-h-[700px] dark:text-light ">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
